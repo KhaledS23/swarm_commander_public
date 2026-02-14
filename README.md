@@ -1,35 +1,38 @@
 # Swarm Commander
 
-**Swarm Commander** is a next-generation Ground Control Station (GCS) designed specifically for managing and simulating multi-drone swarms. Bridging the gap between complex ArduPilot SITL simulations and user-friendly control, it provides a powerful, modern interface for drone fleet operations.
+**Swarm Commander** is a project designed to make drone swarm simulations more accessible and visual.
+
+It bridges the gap between complex ArduPilot simulations and user-friendly control, giving you a modern dashboard to manage multiple simulated drones at once.
+
+> **🚧 Note:** This project is currently in **active development**. The primary focus right now is on **simulation** (SITL). While it is technically possible to control real drones via UDP, I highly recommend sticking to the simulator for now while I continue to build and refine features.
 
 ## 🚀 Key Features
 
-*   **Multi-Drone Swarm Control**: Seamlessly connect to, monitor, and command multiple drones simultaneously.
-*   **Immersive 3D Visualization**: Real-time 3D rendering of drone attitudes, terrain, and mission paths.
-*   **Advanced Mission Planning**: Drag-and-drop mission creation with waypoint visualization and direct upload to ArduPilot.
-*   **Real-Time Telemetry**: High-frequency data streaming for attitude, position, battery status, and GPS health via MAVLink.
-*   **Zero-Setup Simulation**: Built to integrate instantly with ArduPilot SITL for safe, hardware-free testing.
-*   **Cross-Platform**: Native standalone applications for **macOS** and **Windows**.
+*   **Multi-Drone Simulation**: Easily connect to and monitor multiple simulated drones.
+*   **3D Visualization**: See your drones in real-time 3D, complete with terrain and mission paths.
+*   **Mission Planning**: Drag-and-drop waypoints to create missions and upload them instantly.
+*   **Real-Time Data**: Stream telemetry like battery, GPS, and attitude without the clutter.
+*   **Cross-Platform**: Runs natively on **macOS** and **Windows**.
+
+##  Downloads
+
+Grab the latest build to try it out:
+
+### **macOS (Apple Silicon & Intel)**
+*   [Download Swarm Commander for Mac](https://github.com/KhaledS23/swarm_commander_public/blob/main/Swarm-Commander-macOS.zip)
+    *   *Note: On first run, remember to Right-Click > Open to bypass Gatekeeper.*
+
+### **Windows (x64)**
+*   [Download Swarm Commander for Windows](https://github.com/KhaledS23/swarm_commander_public/blob/main/Swarm-Commander-Windows.zip)
 
 ## 🛠️ Technology Stack
 
-*   **Frontend**: Next.js, React, TailwindCSS, Three.js (Fiber/Drei)
-*   **Backend**: Python, Flask, Socket.IO, Pymavlink, PyInstaller
-*   **Communication**: WebSocket-based real-time telemetry bridge
-
-## 📥 Downloads
-
-*Please find the latest build artifacts below:*
-
-### **macOS (Apple Silicon & Intel)**
-*   [Download Swarm Commander for Mac](#) *(Add link here)*
-    *   *Note: On first run, Right-Click > Open to bypass Gatekeeper.*
-
-### **Windows (x64)**
-*   [Download Swarm Commander for Windows](#) *(Add link here)*
+*   **Frontend**: Next.js, React, TailwindCSS, Three.js
+*   **Backend**: Python, Flask, Pymavlink
+*   **Communication**: WebSocket & UDP
 
 ## 🚦 Getting Started
 
-1.  **Launch the App**: Double-click the executable. The backend server will start automatically.
-2.  **Interface**: The dashboard will open in your default web browser (default: `http://localhost:5002`).
-3.  **Connect**: Ensure your SITL instances are running. The Swarm Commander will automatically detect and list available drones.
+1.  **Launch the App**: Double-click the executable. The backend server starts automatically.
+2.  **Interface**: It opens in your browser at `http://localhost:5002`.
+3.  **Connect**: Make sure your SITL instances are running. Swarm Commander will detect them automatically.
