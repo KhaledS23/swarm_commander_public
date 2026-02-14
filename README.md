@@ -21,6 +21,7 @@ Grab the latest build to try it out:
 ### **macOS (Apple Silicon & Intel)**
 *   [Download Swarm Commander for Mac](https://github.com/KhaledS23/swarm_commander_public/blob/main/Swarm-Commander-macOS.zip)
     *   *Note: On first run, remember to Right-Click > Open to bypass Gatekeeper.*
+    *   or run this script in terminal of the installer folder: xattr -d com.apple.quarantine "Swarm Commander"
 
 ### **Windows (x64)**
 *   [Download Swarm Commander for Windows](https://github.com/KhaledS23/swarm_commander_public/blob/main/Swarm-Commander-Windows.zip)
