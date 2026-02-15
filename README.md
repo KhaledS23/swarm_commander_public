@@ -4,9 +4,9 @@
 
 It bridges the gap between complex ArduPilot simulations and user-friendly control, giving you a modern dashboard to manage multiple simulated drones at once.
 
-> **🚧 Note:** This project is currently in **active development**. The primary focus right now is on **simulation** (SITL). While it is technically possible to control real drones via UDP, I highly recommend sticking to the simulator for now while I continue to build and refine features.
+> ** Note:** This project is currently in **active development**. The primary focus right now is on **simulation** (SITL). While it is technically possible to control real drones via UDP, I highly recommend sticking to the simulator for now while I continue to build and refine features.
 
-## 🚀 Key Features
+##  Key Features
 
 *   **Multi-Drone Simulation**: Easily connect to and monitor multiple simulated drones.
 *   **3D Visualization**: See your drones in real-time 3D, complete with terrain and mission paths.
@@ -21,18 +21,19 @@ Grab the latest build to try it out:
 ### **macOS (Apple Silicon & Intel)**
 *   [Download Swarm Commander for Mac](https://github.com/KhaledS23/swarm_commander_public/blob/main/Swarm-Commander-macOS.zip)
     *   *Note: On first run, remember to Right-Click > Open to bypass Gatekeeper.*
+    *   or run this script in terminal of the installer folder: xattr -d com.apple.quarantine "Swarm Commander"
 
 ### **Windows (x64)**
 *   [Download Swarm Commander for Windows](https://github.com/KhaledS23/swarm_commander_public/blob/main/Swarm-Commander-Windows.zip)
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 *   **Frontend**: Next.js, React, TailwindCSS, Three.js
 *   **Backend**: Python, Flask, Pymavlink
 *   **Communication**: WebSocket & UDP
 
-## 🚦 Getting Started
+##  Getting Started
 
 1.  **Launch the App**: Double-click the executable. The backend server starts automatically.
 2.  **Interface**: It opens in your browser at `http://localhost:5002`.
-3.  **Connect**: Make sure your SITL instances are running. Swarm Commander will detect them automatically.
+3.  **Connect**: read the documentaion to know how to connect simulations.
