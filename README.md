@@ -37,3 +37,10 @@ Grab the latest build to try it out:
 1.  **Launch the App**: Double-click the executable. The backend server starts automatically.
 2.  **Interface**: It opens in your browser at `http://localhost:5002`.
 3.  **Connect**: read the documentaion to know how to connect simulations.
+
+##  Join our Discord Channel
+This is an early development tool, and we are expecting some things not to work right outside the box yet, 
+but we would love to get your feedback, and the team will try to fix them quickly.
+
+https://discord.com/channels/1473282227076075686/1473282227751354614
+
